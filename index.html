@@ -1,17 +1,214 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saber Heydari</title>
-    <link rel="icon" type= "image/png" href="./assets/images/falcon-favicon.png?">
-    <link rel="stylesheet" href="./assets/css/fa-all.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/falcon-favicon.png?"
+    />
+    <link rel="stylesheet" href="./assets/css/fa-all.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+
+    <div id="loading">در دست ساخت</div>
+
     <div class="container">
-        تست
+      <!-- Header -->
+      <header id="header">
+        <div id="user-profile">
+          <a href="#">
+            <i class="fa-light fa-user fa-2x"></i>
+            <span>صابر حیدری</span>
+          </a>
+        </div>
+        <div id="nav-bar">
+          <nav>
+            <ul>
+              <li><a href="#about">درباره</a></li>
+              <li><a href="#projects">پروژه ها</a></li>
+              <li><a href="#resume">رزومه</a></li>
+              <li><a href="#contact">تماس</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <a id="color-mode" onclick="darkMode('on')" href="#">
+            <span>حالت تاریک</span>
+            <i class="fa-light fa-moon fa-2x"></i>
+          </a>
+        </div>
+      </header>
+
+      <div class="seperator"></div>
+
+      <!-- Section 1 -->
+      <section id="about">
+        <div>
+          <div>
+            <span>به وبسایت من خوش آمدید</span>
+            <h1>صابر هستم</h1>
+            <p>توسعه دهنده وب فارسی و انگلیسی</p>
+          </div>
+          <div>
+            <a href="#projects">مشاهده نمونه کار ها</a>
+            <a href="#contact">تماس با من</a>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/images/undraw_programming_re_kg9v.svg" />
+        </div>
+      </section>
+
+      <div class="seperator"></div>
+
+      <!-- Section 2 -->
+      <section id="projects">
+        <div>
+          <span>نمونه پروژه هایی که تا به حال کار کردم</span>
+        </div>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <div>
+            <!-- Previous button -->
+            <a class="prev" onclick="plusSlides(-1)">
+              <i class="fa-solid fa-arrow-right fa-2x"></i>
+            </a>
+          </div>
+
+          <div>
+            <!-- Slideshow images -->
+            <div class="mySlides fade">
+              <img src="./assets/images/project-image01.png" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="./assets/images/project-image02.png" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="./assets/images/project-image03.png" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="./assets/images/project-image04.png" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="./assets/images/project-image05.png" />
+            </div>
+          </div>
+
+          <div>
+            <!-- Next button -->
+            <a class="next" onclick="plusSlides(1)">
+              <i class="fa-solid fa-arrow-left fa-2x"></i>
+            </a>
+          </div>
+        </div>
+        <br />
+
+        <!-- The dots/circles -->
+        <div>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+      </section>
+
+      <div class="seperator"></div>
+
+      <!-- Section 3 -->
+      <section id="resume">
+        <div id="experiences">
+          <h2>سابقه</h2>
+          <div>
+            <div>
+              <span>۱۴۰۱</span>
+            </div>
+            <div>
+              <h3>پروژه</h3>
+              <p>در دست ساخت</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <span>۱۴۰۱</span>
+            </div>
+            <div>
+              <h3>پروژه</h3>
+              <p>در دست ساخت</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="educations">
+          <h2>تحصیلات</h2>
+          <div>
+            <div>
+              <span>۱۴۰۱</span>
+            </div>
+            <div>
+              <h3>برنامه نویسی front-end</h3>
+              <p>در دست ساخت</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <span>۱۴۰۰</span>
+            </div>
+            <div>
+              <h3>کارشناسی ادبیات انگلیسی</h3>
+              <p>در دست ساخت</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="seperator"></div>
+
+      <!-- Section 4 -->
+      <section id="contact">
+        <div>
+          <p>به توسعه دهنده وب نیاز دارید؟ با من تماس بگیرید.</p>
+        </div>
+
+        <div>
+          <div>
+            <a href="tel:+989981718191">
+              <i class="fa-light fa-mobile-button fa-2x"></i>
+              موبایل: ۸۱۹۱ ۱۷۱ ۰۹۹۸
+            </a>
+            <a href="mailto:silverethical@gmail.com">
+              <i class="fa-light fa-at fa-2x"></i>
+              ایمیل: silverethical@gmail.com
+            </a>
+          </div>
+          <div>
+            <a href="https://wa.me/+989981718191">
+              <i class="fa-brands fa-whatsapp fa-2x"></i>
+              واتس اپ
+            </a>
+            <a href="https://t.me/Saaber_Heydari">
+              <i class="fa-brands fa-telegram fa-2x"></i>
+              تلگرام
+            </a>
+            <a href="https://www.instagram.com/webheydari/">
+              <i class="fa-brands fa-instagram fa-2x"></i>
+              اینستاگرام
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="seperator"></div>
     </div>
-</body>
+  </body>
+  <script src="./assets/js/script.js"></script>
 </html>
