@@ -1,28 +1,27 @@
 // dark-mode: START
 function darkMode(mode = "on") {
+  let htmlBody = document.body,
+    htmlHeader = document.querySelector("#header"),
+    htmlContact = document.querySelector("#contact"),
+    htmlDarkModeBtn = document.querySelector("#color-mode");
+    
   if (mode == "on") {
-    document.body.className += " body-dark-mode";
-    document.getElementById("header").className += " body-dark-mode";
-    document.getElementById("contact").className += " mini-dark-mode";
+    htmlBody.classList.add("body-dark-mode");
+    htmlHeader.classList.add("body-dark-mode");
+    htmlContact.classList.add("mini-dark-mode");
 
-    document.getElementById("color-mode").style.color =
-      "var(--secondary-color)";
-    document
-      .getElementById("color-mode")
-      .setAttribute("onclick", "darkMode('off')");
+    htmlDarkModeBtn.style.color = "var(--secondary-color)";
+    htmlDarkModeBtn.setAttribute("onclick", "darkMode('off')");
   } else {
-    document.body.className -= " body-dark-mode";
-    document.getElementById("header").className -= " body-dark-mode";
-    document.getElementById("contact").className -= " mini-dark-mode";
+    htmlBody.classList.remove("body-dark-mode");
+    htmlHeader.classList.remove("body-dark-mode");
+    htmlContact.classList.remove("mini-dark-mode");
 
-    document.getElementById("color-mode").style.color = "inherit";
-    document
-    .getElementById("color-mode")
-    .setAttribute("onclick", "darkMode('on')");
+    htmlDarkModeBtn.style.color = "inherit";
+    htmlDarkModeBtn.setAttribute("onclick", "darkMode('on')");
   }
 }
 // dark-mode: END
-
 
 // slideshow: START
 
