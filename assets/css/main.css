@@ -157,6 +157,10 @@ ul > li {
   --dark: #1c1e1f;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font: normal 400 16px "IranYekanWeb", sans-serif;
   line-height: 20px;
